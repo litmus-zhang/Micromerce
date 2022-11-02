@@ -1,0 +1,2 @@
+const seneca = require("seneca")();
+

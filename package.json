@@ -1,0 +1,22 @@
+{
+  "name": "Product Manager",
+  "version": "1.0.0",
+  "description": "Product Manager sub-systtem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "microservice",
+    "product"
+  ],
+  "author": "Litmus Zhang",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "seneca": "^3.29.0",
+    "seneca-mongo-store": "^5.0.1",
+    "type-is": "^1.6.18"
+  }
+}
