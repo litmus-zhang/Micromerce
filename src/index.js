@@ -41,18 +41,10 @@ function api(options) {
     );
   });
   // Create an order
-  seneca.add({area: "ui", action: "createorder"}, function(args, 
-    done) {
-    senecaProductManage.act({area: "product", action: "fetch", 
-    criteria: "byId", id: args.id}, function(err, product) {
-    if(err) done(err, null);
-    senecaOrderProcessor.act(area: "orders", action: "create", 
-    products: [product], email: args.email, name: args.name, 
-    function(err, order) {
-    done(err, order);
-    });
-    })
-});
+  seneca.add({ area: "ui", action: "createorder" }, function (args, done) {
+    //TODO: Implement this
+    
+  });
   this.add("init:api", function (msg, respond) {
     seneca.act(
       "role:web",
